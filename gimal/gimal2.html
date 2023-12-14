@@ -897,23 +897,23 @@
                                 let imagePath = "";
                     
                                 if (springChecked) {
-                                    selectedSeason = "학생";
+                                    selectedSeason = "철 없던 18살 친구 집을 가기 위해 친구와 자전거를 타고 가던 중 친구를 만나 사진 한 컷!";
                                     imagePath = "학생.jpg";
                                 }
                                 if (summerChecked) {
-                                    selectedSeason = "군인";
+                                    selectedSeason = "22살 전역 전 마지막 휴가 평소에 친하기 지내던 후임과 마지막 터미널 탑승을 추억하며..";
                                     imagePath = "군인.jpg";
                                 }
                                 if (autumnChecked) {
-                                    selectedSeason = "잠수부";
+                                    selectedSeason = "23살 수중 용접이 하고 싶어 강릉으로 떠나 잠수를 배우던 시절 잘 챙겨주던 형님과의 추억";
                                     imagePath = "잠수부.jpg";
                                 }
                                 if (winterChecked) {
-                                    selectedSeason = "직장인";
+                                    selectedSeason = "24살 외부 출장을 가던 중 유튜브 촬영에 참여해 미션 성공 후 10만원을 탄 나란,,자식";
                                     imagePath  = "직장인.jpg";
                                 }
                     
-                                resultDiv.innerHTML = `<p>${selectedSeason}을(를) 선택하셨습니다.</p>`;
+                                resultDiv.innerHTML = `<p>${selectedSeason}</p>`;
                                 if (imagePath) {
                                     resultDiv.innerHTML += `<img src="${imagePath}" alt="${selectedSeason}" style="width: 600px;"  />`;
                                 }
