@@ -1,0 +1,338 @@
+<!DOCTYPE html> <!--문서유형-->
+<html>
+<head>
+    <title>css</title>
+    <meta charset="utf-8" />
+    <style>
+        body{ color:darkcyan; }
+        div{ color :darkblue;
+             color:#d86c32;
+             color: rgb(100%,50%,0%);
+             color:rgb(200,100,90);
+    
+
+
+        }
+        /* css 주석 */
+    </style>
+    <!--html 주석-->
+</head>
+<body>
+    <div id="d1">상속</div>
+    <style>
+        div
+        {
+            background-color:lightblue;
+            border: solid 1px black;
+        }
+        #d2{
+            width: 100px;
+            height: 150px;
+        }
+    </style>
+    <div id="d2">width height</div>
+
+    <style>
+        #d3{
+            padding: 30px;
+        }
+    </style>
+    <div id="d3">padding</div>
+    <style>
+        #d4{
+            margin:30px;
+        }
+    </style>
+    <div id="d4">margin </div>
+    <style>
+        *{
+            text-decoration: underline;
+        }
+        strong{ color: red;}
+        em{color: purple;}
+    </style>
+    <strong>strong</strong>
+    <em>em</em>
+    <br />
+    <strong>strong2</strong>
+    <style>
+        .c1{font-size: 30px;}
+        #i1{font-size: 90px;}
+    </style>
+    <div class="c1">class selector</div>
+    <div id="i1">id selector</div>
+    <style>
+        #d5::first-line{
+            color:red;
+        }
+        #d5::first-letter{
+            font-size: 50px;
+        }
+        #d5::before{content: "시작";}
+        #d5::after{content:"끝";}
+   </style>
+    <div id="d5">
+        first line, first letter,first line, first letter,first line, first letter,first line, first letter,
+        first line, first letter,first line, first letter,first line, first letter,first line, first letter,
+        first line, first letter,first line, first letter,first line, first letter,first line, first letter,
+        first line, first letter,first line, first letter,first line, first letter,first line, first letter,
+    </div>
+        <style>
+        #d6 div:first-child{
+            color:green;
+        }
+        #d6 div:nth-child(2){
+            color:cadetblue;
+        }
+        #d6 div:last-child{
+            color:black;
+        }
+    </style>
+    <div id="d6">
+            <div>div1</div>
+            <div>div2</div>
+            <div>div3</div>
+    </div>
+
+    <style>
+            /* :link :visited :hover :active :focus */
+            a:link{ /*링크가있다면*/
+            color:antiquewhite;
+            }
+            a:visited{/*방문한 적이 있다면*/
+            color:red;
+            }
+            a:active{ /*마우스로 누르면*/
+            color:yellow;
+            }
+            a:hover{ /*마우스를 올리면*/
+            color:blueviolet;
+            font-weight:bold;
+            }
+            a:focus{ /*포커스 되면*/
+            color:pink;
+            }
+    </style>
+    <a href="https://cafe.naver.com/kwdmd">계원카페</a>
+
+    <style>
+        #d7>span{ /*자식요소 선택자*/
+            font-size:40px
+        }
+        #d7 span{/*하위요소 선택자*/
+            font-style:italic;
+        }
+        #d7>div>span{
+            font-weight:bold;
+        }
+    </style>
+    <div id="d7">
+        <span>span1</span>
+        <div>
+            <span>span2</span>
+        </div>
+    </div>
+
+    <style>
+        body{font-size: 12px;}
+        div{ font-size: 12px;}
+        span{font-size: 12px;}
+        body,div,span{ font-size: 12px;}
+    </style>
+
+    <style>
+        #d8{
+            width:200px;
+            height: 200px;
+            border: solid 2px red;
+            border-left: solid 2px blue;
+            border-right: solid 2px yellow;
+            border-top: dotted 2px pink;
+            border-bottom: dashed 2px black;
+
+            margin: 50px;    
+            margin: 50px 100px; /*상하 좌우*/
+            margin: 0px 50px 100px 150px; /*상 우 좌 하 위에서부터 시계방향 */ 
+            margin-left: 0px;
+            margin-top: 100px;
+
+            padding: 50px;    
+            padding: 50px 100px; /*상하 좌우*/
+            padding: 0px 50px 100px 150px; /*상 우 좌 하 위에서부터 시계방향 */ /*패딩과 마진은 사용법 동일*/ 
+            padding-left: 0px;
+            padding-top: 100px; 
+
+        }
+    </style>
+    <div id="d8">box model</div>
+    
+    <style>
+        #d9{
+            position: absolute; /*절대적인*/
+            left: 250px;
+            top: 90px;
+        }
+        #d10{
+            position: relative; /*관계형*/
+            /*realtive인 부모는, absolute 자식의 기준이 된다.*/ 
+            height: 500px;
+            background-color: white;
+        }
+       
+    </style>
+    <div id="d10"> 
+    <div id="d9">absolute</div>
+    </div>
+
+   
+    
+<style>
+    #d11{
+        position: fixed; /* 고정된 */
+        top:0px;
+        right:0px;
+    }
+</style>
+<div id="d11">fixed</div>
+
+<style>
+    #d12{
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 80px;
+        font-weight: bold;
+        font-style: italic;
+        text-align: center;
+        margin: 0px auto;
+        width: 300px;
+
+    }
+</style>
+<div id="d12">font family</div>
+
+<style>
+    #d13{
+        letter-spacing: 80px;
+        line-height: 80px;
+        background-color: white;
+        color: black;
+        border: white;
+    }
+</style>
+<div id="d13">letter-spacing, line height</div>
+
+
+<style>
+    #d14{
+        white-space: pre;
+        font-size: 80px;
+        text-decoration: none;
+    }
+</style>
+
+
+
+<style>
+    #d15{
+        min-width: 500px;
+        border-radius: 5px;
+        text-shadow: 1px 1px 2px darkolivegreen;
+        /*가로이동, 세로이동, 번짐, 색상*/
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 100px;
+
+    }
+</style>
+
+<div id="d15">min max width
+    min max widthmin max widthmin max widthmin max widthmin max widthmin max widthmin max widthmin max widthmin max width
+    min max widthmin max widthminmin max widthmin max widthmin max widthmin max widthmin max widthmin max widthmin max widthmin max width
+    min max widthmin max widthmin max widthmin max width max widthmin max widthmin max widthmin max widthmin max widthmin max widthmin max width
+</div>
+
+<style>
+    #d16{
+        background-color:yellow;
+        text-align: center;
+        height: 30px;
+        margin: 0px auto;
+        width: 100px;
+        transition: background-color 2s,
+        height 2s;
+        
+
+    }
+    #d16:hover{
+        background-color: blue;
+        height: 60px;
+    }
+</style>
+
+<div id="d16" >transition</div>
+
+<style>
+    @keyframes animation17{
+        from{background-color: white;}
+        to{background-color: violet;}
+    }
+    #d17{
+        animation-name:animation17;
+        animation-duration: 10s;
+    }
+</style>
+<div id="d17">animation</div>
+
+<style>
+    .col1{
+        columns: 100px 3; /*첫번째 최소값 두번째 최대값*/
+    }
+</style>
+<div class="col1">
+    1절 - 동해물과 백두산이 마르고 닳도록
+    하느님이 보우하사 우리나라만세
+    무궁화 삼천리 화려강산 대한사람 대한으로 길이 보전하세
+    
+    2절 - 남산위에 저 소나무 철갑을 두른듯
+    바람서리 불변함은 우리기상 일세
+    무궁화 삼천리 화려강산 대한사람 대한으로 길이보전하세
+    
+    3절 - 가을하늘 공활한데 높고 구름없이 
+    밝은달은 우리가슴 일편단심일세
+    무궁화 삼천리 화려강산 대한사람 대한으로 길이보전하세
+    
+    4절 - 이 기상과 이 맘으로 충성을 다하여
+    괴로우나 즐거우나 나라사랑하세
+    무궁화 삼천리 화려강산 대한사람 대한으로 길이보전하세
+    </div>
+
+    <style>
+    #d18{
+            display: flex; /*표시방식 유연하게*/    
+        }
+    #d18 div:nth-child(1){flex:1;}
+    #d18 div:nth-child(2){flex:4;}
+    #d18 div:nth-child(3){flex:9;}
+    </style>
+
+    <div id="d18">
+        <div>child1</div>
+        <div>child2</div>
+        <div>child3</div>
+    </div>
+
+    <style>
+        #d19{
+            display:flex;
+            justify-content: space-between;
+            margin: 0px auto;
+            width: 100px;
+        }
+    </style>
+    <div id="d19">
+        <div>child1</div>
+        <div>child2</div>
+        <div>child3</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>레이아웃</title>
+    <meta charset="utf-8" />
+    <style>
+        #wrap ul{}
+        header ul{}
+        #wrap>header>ul{}
+        #wrap{
+            min-width: 1000px; /*최소넓이*/
+            max-width: 1920px;
+            margin: 0px auto;
+        }
+        header ul{
+            list-style: none;
+            display: flex;
+            margin: 13px ;
+           
+        }
+        header li{
+            padding: 0px 10px;
+            border-right: solid 1px gray;
+            
+        }
+        header li:last-child{
+            border:none;
+            padding: 5px 50px;
+        }
+        header{
+            display: flex;
+            justify-content:space-between;
+        }
+        header h1{
+            margin: 0px;
+        }
+        header>div>img{
+            margin: 13px 0px;
+        }
+        nav ul{
+            list-style: none;
+            display: flex;
+            margin: 13px ;
+        }
+        nav li{
+            padding: 0px 10px;
+            margin: 13px;
+        }
+        nav{
+            display: flex;
+            justify-content: space-between;
+            background-color: rgb(240, 240, 240);
+            padding: 5px 50px;
+        }
+        nav div{
+            margin: 0px 13px;
+        }
+        #content>section:nth-child(1){background-color: #98f;}
+        #content>section:nth-child(2){background-color:  #5d9;}
+        #content>section:nth-child(3){background-color: #f76;}
+        #content>section:nth-child(4){background-color: #ec5;}
+        #content>section>div{
+            display: flex;
+            padding: 10px;
+            justify-content: center;
+        }
+        #content>section>div>div{
+            margin: 0px 10px;
+          
+        }
+        #content dt{
+            font-weight: bold;
+        }
+       #content dd{
+        margin: 0px;
+       }
+       h3{
+                margin: 0px;
+                margin-bottom: 30px;
+                color:white;
+                font-weight: normal;
+            }
+            section{
+                padding: 50px;
+            }
+            footer{
+                display: flex;
+                justify-content: space-between;
+                background-color: #949494;
+                padding: 50px;
+
+
+            }
+            footer ul{
+                list-style: none;
+                display: flex;
+                padding: 0px;
+            }
+            footer li{
+                padding: 0px 5px;
+            }
+            footer div:first-child li{
+                border-right: solid 1px lightgray;
+            }
+            footer div:first-child li:last-child{
+                border:none;
+            }
+            
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+                <h1><img src="logo.png" /></h1>
+                <ul>
+                    <li>ABOUT</li>
+                    <li>SERVICES</li>
+                    <li>WORKS</li>
+                    <li>BLOG</li>
+                    <li>CONTACT US</li>
+                </ul>
+                <div><img src="zoom.png" /></div>
+
+
+
+
+
+        </header>
+        <nav>
+            <h2>SEE OUR WORKS</h2>
+            <ul>
+                <li>Web design</li>
+                <li>icons</li>
+                <li>Elements</li>
+                <li>ETC</li>
+            </ul>
+            <div></div>
+        </nav>
+        <div id="content">
+            <section>
+            <h3>Web design</h3>
+                <div>
+                    <div>
+                        <img src="img.png" />
+                        <dl>
+                            <dt><h4>Adventure</h4></dt>
+                            <dd>If you have a specific context or type···</dd>
+                        </dl>
+                    </div>
+                    <div>
+                        <img src="img1.png" />
+                        <dl>
+                            <dt><h4>Celebration</h4></dt>
+                            <dd>Learn, grow, and embrace every moment···</dd>
+                        </dl>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h3>Icons</h3>
+                    <div>
+                        <div>
+                            <img src="img3.png" />
+                            <dl>
+                                <dt><h4>Serendipity</h4></dt>
+                                <dd> echoes of the past···</dd>
+                            </dl>
+                        </div>
+                        <div>
+                            <img src="img4.png" />
+                            <dl>
+                                <dt><h4>Opulent</h4></dt>
+                                <dd>The Great Gatsby" by F. Scott Fitzgerald···</dd>
+                            </dl>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <h3>Elements</h3>
+                        <div>
+                            <div>
+                                <img src="img5.png" />
+                                <dl>
+                                    <dt><h4>Celestial</h4></dt>
+                                    <dd>forgotten echoes···</dd>
+                                </dl>
+                            </div>
+                            <div>
+                                <img src="img6.png" />
+                                <dl>
+                                    <dt><h4>Petrichor</h4></dt>
+                                    <dd>the secrets of a bygone···</dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <h3>ETC</h3>
+                            <div>
+                                <div>
+                                    <img src="img7.png" />
+                                    <dl>
+                                        <dt><h4>Resonant</h4></dt>
+                                        <dd>he twilight of dusk, shadows dance on the ancient ···</dd>
+                                    </dl>
+                                </div>
+                                <div>
+                                    <img src="img8.png" />
+                                    <dl>
+                                        <dt><h4>Ineffable</h4></dt>
+                                        <dd>that lingers in the hearts···</dd>
+                                    </dl>
+                                </div>
+                            </div>
+                    </section>
+        </div>
+                        <footer>
+                            <div>
+                                <ul>
+                                    <li>home</li>
+                                    <li>about</li>
+                                    <li>services</li>
+                                    <li>work</li>
+                                </ul>
+                                <p>copyright</p>
+                                <p>discription</p>
+                            </div> 
+                            <div>
+                                <ul>
+                                    <li><img src="facebook.png"/></li>
+                                    <li><img src="google.png"/></li>
+                                    <li><img src="chrome.png"/></li>
+                                    <li><img src="insta.png"/></li>
+                                    <li><img src="pinter.png"/></li>
+                                    <li><img src="twi.png"/></li>
+                                </ul>
+                            </div>
+                        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html><!--문서유형-->
+<html>
+    <head>
+        <title>회원이십니까?</title>
+        <script>
+        function 이동() 
+        {
+            // 원하는 사이트의 URL을 여기에 넣으세요
+            var 이동할URL = "sub.html";
+            window.location.href = 이동할URL;
+        }
+        </script>
+        <style>
+        h1{
+            font-size: 50px;
+            color: rgb(10, 119, 243);
+            text-align: center;
+        }
+        </style>
+    </head>
+    <body>
+    <h1>안녕하세요  </h1>   
+    <hr />
+    <form>
+        <label for="name_1">아이디</label>
+        <input type="text" placeholder="특수문자 제외 영문,숫자만" />
+        <label for="name_1">비밀번호</label> <input type="password" />
+        <input onclick="alert('로그인 완료');window.open('file:///C:/Users/user/Desktop/Web2023.gunug_class/Lee99yeah.github.io/sub.html', '_self');" type="button" value="확인" />
+    </form>
+    </body>
+</html>
